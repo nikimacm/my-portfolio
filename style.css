@@ -140,28 +140,28 @@ html {
 }
 
 .circle-1 {
-    background: url(images/landing/geo.jpeg) center no-repeat;
+    background: url(images/landing/ferris-white.jpeg) center no-repeat;
     background-size: cover;
     border: 0.5rem dotted #a14b1a;
     background-clip: content-box;
 }
 
 .circle-2 {
-    background: url(images/landing/home_get-started.png) center no-repeat;
+    background: url(images/landing/purple-mountain.jpeg) center no-repeat;
     background-size: cover;
     border: 0.5rem dashed #ffbd07;
     background-clip: content-box;
 }
 
 .circle-3 {
-    background: url(images/landing/pexels-pixabay-70346.jpeg) center no-repeat;
+    background: url(images/landing/grafitti-eyes.jpeg) center no-repeat;
     background-size: cover;
     border: 1rem double #9b0e0e;
     background-clip: content-box;
 }
 
 .circle-4 {
-    background: url(images/landing/pexels-bymalens-2157895.jpeg) center no-repeat;
+    background: url(images/landing/white-flowers.jpeg) center no-repeat;
     background-size: cover;
     border: 0.7rem double #fff;
     background-clip: content-box;
