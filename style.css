@@ -16,6 +16,12 @@ html {
     font-size: 62.5%;
 }
 
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* End of Common Styles */
 
 /* Mouse Circle */
@@ -92,7 +98,107 @@ html {
 .section-1 {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 100vh;
 }
 
+/*Logo*/
+.logo {
+    position: absolute;
+    top: 2rem;
+    left: 5rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+/*End of Logo*/
+
+/*Animated Circle*/
+.circles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.circle {
+    width: 22rem;
+    height: 22rem;
+    border-radius: 50%;
+    background-color: #9b0e0e;
+    align-self: center;
+    justify-self: center;
+    opacity: 0.5;
+}
+
+.circle-1 {
+    background: url(images/landing/geo.jpeg) center no-repeat;
+    background-size: cover;
+    border: 0.5rem dotted #a14b1a;
+    background-clip: content-box;
+}
+
+.circle-2 {
+    background: url(images/landing/home_get-started.png) center no-repeat;
+    background-size: cover;
+    border: 0.5rem dashed #ffbd07;
+    background-clip: content-box;
+}
+
+.circle-3 {
+    background: url(images/landing/pexels-pixabay-70346.jpeg) center no-repeat;
+    background-size: cover;
+    border: 1rem double #9b0e0e;
+    background-clip: content-box;
+}
+
+.circle-4 {
+    background: url(images/landing/pexels-bymalens-2157895.jpeg) center no-repeat;
+    background-size: cover;
+    border: 0.7rem double #fff;
+    background-clip: content-box;
+}
+
+.main-circle {
+    width: 55rem;
+    height: 55rem;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.main-circle img {
+    mix-blend-mode: hard-light;
+    opacity: 0.5;
+}
+
+/*End of Animated Circle*/
+
+/*Featured Text*/
+.featured-text {
+    font-size: 2rem;
+    color: #fff;
+    text-transform: uppercase;
+    width: 0;
+    word-wrap: break-word;
+    line-height: 3.5;
+    position: sticky;
+    top: 0;
+}
+
+
+
+.featured-text-1 {
+    margin: 0 auto 0 10rem;
+}
+
+.featured-text-2 {
+    margin: 0 10rem 0 auto;
+}
+
+/*End of Featured Text*/
 /* End of Section 1 */
