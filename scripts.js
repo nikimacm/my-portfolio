@@ -13,4 +13,9 @@ document.body.addEventListener("mousemove", (e) => {
 
     mouseCircleFn(x, y);
 });
-// End of Circle
+
+document.body.addEventListener("mouseleave", () => {
+    mouseCircle.style.opacity = "0";
+    mouseDot.style.opacity = "0";
+});
+// End of Mouse Circle
