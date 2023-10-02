@@ -3,13 +3,14 @@ const mouseDot = document.querySelector(".mouse-dot");
 
 // Mouse Circle
 const mouseCircleFn = (x, y) => {
-    mouseCircle.style.cssText = `top:${y}px;left:${x}
-px`;
-    mouseDot.style.cssText = `top:${y}px;left:${x}
-px`;
+    mouseCircle.style.cssText = `top:${y}px;left:${x}px`;
+    mouseDot.style.cssText = `top:${y}px;left:${x}px`;
 };
 
 document.body.addEventListener("mousemove", (e) => {
-    console.log("moved");
+    let x = e.clientX;
+    let y = e.clientY;
+
+    mouseCircleFn(x, y);
 });
-// End of mouse
+// End of Circle
