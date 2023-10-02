@@ -133,6 +133,10 @@ html {
     align-self: center;
     justify-self: center;
     opacity: 0.5;
+    position: relative;
+    top: 0;
+    left: 0;
+    transition: left 2s, top 2s;
 }
 
 .circle-1 {
@@ -174,6 +178,10 @@ html {
 .main-circle img {
     mix-blend-mode: hard-light;
     opacity: 0.5;
+    position: relative;
+    top: 0;
+    left: 0;
+    transition: left 2s, top 2s;
 }
 
 /*End of Animated Circle*/
