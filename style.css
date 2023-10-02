@@ -31,6 +31,7 @@ html {
     position: fixed;
     z-index: 300;
     transform: translate(-50%, -50%);
+    pointer-events: none;
 }
 
 .mouse-circle {
@@ -144,6 +145,7 @@ html {
     background-size: cover;
     border: 0.5rem dotted #a14b1a;
     background-clip: content-box;
+    margin-left: -10rem;
 }
 
 .circle-2 {
@@ -151,6 +153,7 @@ html {
     background-size: cover;
     border: 0.5rem dashed #ffbd07;
     background-clip: content-box;
+    margin-right: -10rem;
 }
 
 .circle-3 {
@@ -158,6 +161,7 @@ html {
     background-size: cover;
     border: 1rem double #9b0e0e;
     background-clip: content-box;
+    margin-left: -10rem;
 }
 
 .circle-4 {
@@ -165,6 +169,7 @@ html {
     background-size: cover;
     border: 0.7rem double #fff;
     background-clip: content-box;
+    margin-right: -10rem;
 }
 
 .main-circle {
@@ -173,6 +178,12 @@ html {
     position: absolute;
     overflow: hidden;
     border-radius: 50%;
+    transition: width 0.2s, height 0.2s;
+}
+
+.main-circle:hover {
+    width: 75rem;
+    height: 75rem;
 }
 
 .main-circle img {
@@ -198,8 +209,6 @@ html {
     top: 0;
 }
 
-
-
 .featured-text-1 {
     margin: 0 auto 0 10rem;
 }
@@ -209,4 +218,62 @@ html {
 }
 
 /*End of Featured Text*/
+
+/* Main Button */
+.main-btn {
+    position: absolute;
+    bottom: 3rem;
+    width: 13rem;
+    height: 13rem;
+    background-color: #9b0e0e;
+    border-radius: 50%;
+    border: 0.2rem dotted #fff;
+    padding: 0.1rem;
+
+}
+
+.main-btn-content {
+    width: 100%;
+    height: 100%;
+    border: 0.2rem dotted #e7be08;
+    border-radius: 50%;
+    transform: rotate(40deg);
+}
+
+.main-btn-line {
+    position: absolute;
+    top: 4rem;
+    width: 3rem;
+    height: 0.5rem;
+    border: 0.1rem solid #fff;
+
+}
+
+.main-btn-line:nth-child(1) {
+    transform: rotateZ(-45deg)translateX(-0.65rem);
+    transform-origin: left center;
+    border-right: none;
+}
+
+.main-btn-line:nth-child(2) {
+    transform: rotateZ(45deg)translateX(0.65rem);
+    transform-origin: right center;
+    border-left: none;
+}
+
+.main-btn-line:nth-child(3) {
+    transform: rotateZ(90deg)translateX(0.5rem);
+    border-left: none;
+}
+
+.main-btn span {
+    position: absolute;
+    bottom: 3rem;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* End of Main Button */
 /* End of Section 1 */
