@@ -74,4 +74,8 @@ mainBtn.addEventListener("mouseenter", (e) => {
     ripple.style.top = `${top}px`;
     mainBtn.prepend(ripple);
 })
+
+mainBtn.addEventListener("mouseleave", () => {
+    mainBtn.removeChild(ripple);
+})
 //End of Main Button
