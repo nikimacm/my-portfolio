@@ -262,8 +262,8 @@ html {
 }
 
 .main-circle {
-    width: 55rem;
-    height: 55rem;
+    width: 40rem;
+    height: 40rem;
     position: absolute;
     overflow: hidden;
     border-radius: 50%;
@@ -271,8 +271,8 @@ html {
 }
 
 .main-circle:hover {
-    width: 75rem;
-    height: 75rem;
+    width: 55rem;
+    height: 55rem;
 }
 
 .main-circle img {
@@ -281,7 +281,7 @@ html {
     position: relative;
     top: 0;
     left: 0;
-    transition: left 2s, top 2s;
+    transition: left 0.2s, top 0.2s;
 }
 
 /*End of Animated Circle*/
