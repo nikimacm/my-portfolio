@@ -79,3 +79,16 @@ mainBtn.addEventListener("mouseleave", () => {
     mainBtn.removeChild(ripple);
 })
 //End of Main Button
+
+// About Me Text
+const aboutMeText = document.querySelector(".about-me-text");
+const aboutMeTextContent =
+    " Welcome to my portfolio! I'm a versatile professional who has journeyed from the world of graphic design to the realm of software development. My career has been a fusion of creativity and code, where I've harnessed my design sensibilities to craft intuitive and visually appealing software solutions.";
+
+Array.from(aboutMeTextContent).forEach(char => {
+    const span = document.createElement("span");
+    span.textContent = char;
+    aboutMeText.appendChild(span);
+});
+
+// End of About me Text 
