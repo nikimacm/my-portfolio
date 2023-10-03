@@ -230,7 +230,7 @@ html {
 }
 
 .circle-1 {
-    background: url(images/landing/ferris-white.jpeg) center no-repeat;
+    background: url(images/landing/profile-photo-sm.png) center no-repeat;
     background-size: cover;
     background-clip: content-box;
     border: 0.5rem dotted #a14b1a;
@@ -246,7 +246,7 @@ html {
 }
 
 .circle-3 {
-    background: url(images/landing/grafitti-eyes.jpeg) center no-repeat;
+    background: url(images/landing/ferris-white.jpeg) center no-repeat;
     background-size: cover;
     background-clip: content-box;
     border: 1rem double #9b0e0e;
