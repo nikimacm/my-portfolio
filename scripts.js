@@ -27,8 +27,8 @@ const animateCircles = (e, x, y) => {
             circle.style.left = `-${z}px`;
         });
         mainImg.style.left = `-${z}px`;
-
     }
+
     if (y < mY) {
         circles.forEach((circle) => {
             circle.style.top = `${z}px`;
@@ -60,35 +60,42 @@ document.body.addEventListener("mouseleave", () => {
 });
 
 //Main Button
-const mainBtn = document.querySelector(".main-btn");
+const mainBtns = document.querySelectorAll(".main-btn");
 
-let ripple;
+mainBtns.forEach((btn) => {
+    let ripple;
 
-mainBtn.addEventListener("mouseenter", (e) => {
-    const left = e.clientX - e.target.getBoundingClientRect().left;
-    const top = e.clientY - e.target.getBoundingClientRect().top;
+    btn.addEventListener("mouseenter", (e) => {
+        console.log("hi");
+        const left = e.clientX - e.target.getBoundingClientRect().left;
+        const top = e.clientY - e.target.getBoundingClientRect().top;
 
-    ripple = document.createElement("div");
-    ripple.classList.add("ripple");
-    ripple.style.left = `${left}px`;
-    ripple.style.top = `${top}px`;
-    mainBtn.prepend(ripple);
-})
+        ripple = document.createElement("div");
+        ripple.classList.add("ripple");
+        ripple.style.left = `${left}px`;
+        ripple.style.top = `${top}px`;
+        btn.prepend(ripple);
+    });
 
-mainBtn.addEventListener("mouseleave", () => {
-    mainBtn.removeChild(ripple);
-})
-//End of Main Button
+    btn.addEventListener("mouseleave", () => {
+        btn.removeChild(ripple);
+    });
+});
+
+// End of Main Button
 
 // About Me Text
 const aboutMeText = document.querySelector(".about-me-text");
 const aboutMeTextContent =
-    " Welcome to my portfolio! I'm a versatile professional who has journeyed from the world of graphic design to the realm of software development. My career has been a fusion of creativity and code, where I've harnessed my design sensibilities to craft intuitive and visually appealing software solutions.";
-
+    "Software Developer and UX/UI Designer- A fusion of creativity and code. I'll turn your ideas into beautifully functional realities. A stunning website, a mobile app with a delightful user experience, or a custom software solution. Bring your vision to life.";
 Array.from(aboutMeTextContent).forEach(char => {
     const span = document.createElement("span");
     span.textContent = char;
     aboutMeText.appendChild(span);
+
+    span.addEventListener('mouseenter', (e) => {
+        e.target.style.animation = "aboutMeTextAnim 10s infinite";
+    });
 });
 
 // End of About me Text 
