@@ -178,7 +178,7 @@ html {
     position: fixed;
     width: 100%;
     height: 100vh;
-    background: url('images/landing/bg.jpg') center no-repeat, linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7));
+    background: url('images/landing/bg.jpeg') center no-repeat, linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7));
     background-size: cover;
 }
 
@@ -230,7 +230,7 @@ html {
 }
 
 .circle-1 {
-    background: url(images/landing/profile-photo-sm.png) center no-repeat;
+    background: url(images/landing/grafitti-eyes.jpeg) center no-repeat;
     background-size: cover;
     background-clip: content-box;
     border: 0.5rem dotted #a14b1a;
@@ -467,5 +467,43 @@ html {
 }
 
 /* End of Section 2 Main Button */
-
 /* End of Section 2 */
+
+/* Section 3 */
+.section-3 {
+    width: 100%;
+    height: 100%;
+    padding: 20rem 0 10rem 0;
+    position: relative;
+}
+
+/* Projects */
+
+.projects {
+    flex-wrap: wrap;
+    padding-bottom: 15rem;
+}
+
+.project {
+    width: 40rem;
+    height: 45rem;
+    overflow: hidden;
+    margin: 5rem;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    border: 0.2rem dotted #9b0e0e;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.project img {
+    width: 90%;
+    object-fit: cover;
+    position: absolute;
+    top: 2rem;
+}
+
+/* End of Projects */
+/* End of Section 3 */
