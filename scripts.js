@@ -66,7 +66,7 @@ mainBtns.forEach((btn) => {
     let ripple;
 
     btn.addEventListener("mouseenter", (e) => {
-        console.log("hi");
+
         const left = e.clientX - e.target.getBoundingClientRect().left;
         const top = e.clientY - e.target.getBoundingClientRect().top;
 
@@ -106,8 +106,12 @@ const projects = document.querySelectorAll(".project");
 projects.forEach((project) => {
     project.addEventListener("mouseenter", () => {
         project.firstElementChild.style.top = `-${
-            project.firstElementChild.offsetHeight-project.offsetHeight
+            project.firstElementChild.offsetHeight - project.offsetHeight
         }px`;
+    });
+
+    project.addEventListener("mouseleave", () => {
+        project.firstElementChild.style.top = "2rem";
     });
 });
 // End of Projects
