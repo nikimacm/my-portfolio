@@ -178,7 +178,7 @@ html {
     position: fixed;
     width: 100%;
     height: 100vh;
-    background: url('images/landing/bg.jpeg') center no-repeat, linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7));
+    background: url('images/landing/bg.jpg') center no-repeat, linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7));
     background-size: cover;
 }
 
@@ -277,6 +277,8 @@ html {
 
 .main-circle img {
     mix-blend-mode: normal;
+    width: 100%;
+    height: 100%;
     opacity: 0.5;
     position: relative;
     top: 0;
