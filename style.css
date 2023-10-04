@@ -262,8 +262,8 @@ html {
 }
 
 .main-circle {
-    width: 40rem;
-    height: 40rem;
+    width: 55rem;
+    height: 55rem;
     position: absolute;
     overflow: hidden;
     border-radius: 50%;
@@ -271,14 +271,13 @@ html {
 }
 
 .main-circle:hover {
-    width: 55rem;
-    height: 55rem;
+    width: 75rem;
+    height: 75rem;
 }
 
 .main-circle img {
     mix-blend-mode: normal;
-    width: 100%;
-    height: 100%;
+    background-size: cover;
     opacity: 0.5;
     position: relative;
     top: 0;
