@@ -502,6 +502,7 @@ html {
     object-fit: cover;
     position: absolute;
     top: 2rem;
+    transition: top 4s;
 }
 
 /* End of Projects */

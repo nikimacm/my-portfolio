@@ -99,3 +99,15 @@ Array.from(aboutMeTextContent).forEach(char => {
 });
 
 // End of About me Text 
+
+// Projects
+const projects = document.querySelectorAll(".project");
+
+projects.forEach((project) => {
+    project.addEventListener("mouseenter", () => {
+        project.firstElementChild.style.top = `-${
+            project.firstElementChild.offsetHeight-project.offsetHeight
+        }px`;
+    });
+});
+// End of Projects
