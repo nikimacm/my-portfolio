@@ -101,6 +101,7 @@ Array.from(aboutMeTextContent).forEach(char => {
 // End of About me Text 
 
 // Projects
+const container = document.querySelector(".container");
 const projects = document.querySelectorAll(".project");
 
 projects.forEach((project) => {
@@ -120,5 +121,9 @@ projects.forEach((project) => {
         bigImgWrapper.className = "project-img-wrapper";
         container.appendChild(bigImgWrapper);
     });
+
+    const bigImg = document.createElement("img");
+    bigImg.className = "project-img";
+
     // End of Big Project Image
 });
