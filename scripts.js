@@ -105,7 +105,7 @@ const container = document.querySelector(".container");
 const projects = document.querySelectorAll(".project");
 const projectHideBtn = document.querySelector(".project-hide-btn");
 
-projects.forEach((project) => {
+projects.forEach((project, i) => {
     project.addEventListener("mouseenter", () => {
         project.firstElementChild.style.top = `-${
             project.firstElementChild.offsetHeight - project.offsetHeight
@@ -139,6 +139,34 @@ projects.forEach((project) => {
     });
 
     // End of Big Project Image
+
+    if (i >= 6) {
+        project.style.cssText = "display: none; opacity:0";
+    }
 });
+
+// Projects Button
+
+const projectsBtn = document.querySelector(".projects-btn");
+let showHideBool = true;
+
+projectsBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    projects.forEach((project, i) => {
+        if (i >= 6) {
+            if (showHideBool) {
+                project.style.display = "flex";
+                project.style.opacity = "1";
+            } else {
+                project.style.display = "none";
+                project.style.opacity = "0";
+            }
+        }
+
+    });
+});
+
+// End of Projects Button
 
 // End of Projects

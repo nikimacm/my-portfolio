@@ -600,8 +600,14 @@ html {
     transition: transform 0.5s;
 }
 
-
 /* End of Project Hide Button */
-
 /* End of Projects */
+
+/* Projects Button */
+.projects-btn {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* End of Projects Button */
 /* End of Section 3 */
