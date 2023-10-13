@@ -111,6 +111,21 @@ html {
 
 /* End of Main Button */
 
+/* Section Heading */
+.section-heading {
+    font-size: 2rem;
+    font-weight: 300;
+    color: #fff;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 10rem;
+    transform: translateY(-50%);
+    width: 0;
+    word-break: break-all;
+    line-height: 4;
+}
+
 /* End of Common Styles */
 
 /* Mouse Circle */
@@ -404,21 +419,6 @@ html {
     padding: 10rem 10rem 15rem 10rem;
 }
 
-/* Section 2 Heading */
-.section-2-heading {
-    font-size: 2rem;
-    font-weight: 300;
-    color: #fff;
-    text-transform: uppercase;
-    position: absolute;
-    top: 50%;
-    left: 10rem;
-    transform: translateY(-50%);
-    width: 0;
-    word-break: break-all;
-    line-height: 4;
-}
-
 /* End of Section 2 Heading */
 /* About Me Text */
 .about-me-text {
@@ -495,7 +495,8 @@ html {
     border: 0.2rem dotted #9b0e0e;
     border-radius: 0.5rem;
     cursor: pointer;
-    perspective: 25%;
+    perspective: 20rem;
+    transition: opacity .5s;
 }
 
 .project img {

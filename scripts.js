@@ -87,7 +87,7 @@ mainBtns.forEach((btn) => {
 // About Me Text
 const aboutMeText = document.querySelector(".about-me-text");
 const aboutMeTextContent =
-    "Software Developer and UX/UI Designer- A fusion of creativity and code. I'll turn your ideas into beautifully functional realities. A stunning website, a mobile app with a delightful user experience, or a custom software solution. Bring your vision to life.";
+    "Software Developer and UX/UI Designer- A fusion of creativity and code.";
 Array.from(aboutMeTextContent).forEach(char => {
     const span = document.createElement("span");
     span.textContent = char;
@@ -147,30 +147,50 @@ projects.forEach((project, i) => {
 
 // Projects Button
 
+const section3 = document.querySelector(".section-3");
 const projectsBtn = document.querySelector(".projects-btn");
 const projectsBtnText = document.querySelector(".projects-btn span");
 let showHideBool = true;
+
+const showProjects = (project, i) => {
+    setTimeout(() => {
+        project.style.display = "flex";
+        section3.scrollIntoView({
+            block: "end"
+        });
+    }, 600);
+
+    setTimeout(() => {
+        project.style.opacity = "1";
+    }, i * 200);
+};
+
+const hideProjects = (project, i) => {
+    setTimeout(() => {
+        project.style.display = "none";
+        section3.scrollIntoView({
+            block: "end"
+        });
+    }, 1200);
+
+    setTimeout(() => {
+        project.style.opacity = "0";
+    }, i * 100);
+};
 
 projectsBtn.addEventListener("click", (e) => {
     e.preventDefault();
 
     projectsBtn.firstElementChild.nextElementSibling.classList.toggle("change");
 
+    showHideBool
+        ?
+        (projectsBtnText.textContent = "Show Less") :
+        (projectsBtnText.textContent = "Show More");
+
     projects.forEach((project, i) => {
-        if (i >= 6) {
-            if (showHideBool) {
-                project.style.display = "flex";
-                project.style.opacity = "1";
-
-                projectsBtnText.textContent = "Show Less"
-            } else {
-                project.style.display = "none";
-                project.style.opacity = "0";
-
-                projectsBtnText.textContent = "Show More"
-            }
-        }
-
+        i >= 6 &&
+            (showHideBool ? showProjects(project, i) : hideProjects(project, i));
     });
     showHideBool = !showHideBool;
 });
