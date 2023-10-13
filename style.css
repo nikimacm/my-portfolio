@@ -632,10 +632,9 @@ html {
 /* End of Section 3 */
 
 /* Section 4 */
-
 .section-4 {
     position: relative;
-    width: 100%
+    width: 100%;
 }
 
 /* Services */
@@ -670,7 +669,7 @@ html {
 }
 
 .service-text {
-    font-size: 5rem;
+    font-size: 3rem;
     color: #777;
     letter-spacing: 0.1rem;
     height: 0;
