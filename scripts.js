@@ -198,3 +198,16 @@ projectsBtn.addEventListener("click", (e) => {
 // End of Projects Button
 
 // End of Projects
+
+// Section 4
+document.querySelectorAll(".service-btn").forEach((service) => {
+    service.addEventListener("click", (e) => {
+        e.preventDefault();
+
+        const serviceText = service.nextElementSibling;
+        serviceText.classList.toggle("change");
+    });
+});
+
+
+// End of Section 4
