@@ -212,7 +212,6 @@ document.querySelectorAll(".service-btn").forEach((service) => {
             0;
 
         service.firstElementChild.style.right = rightPosition;
-
     });
 });
 
