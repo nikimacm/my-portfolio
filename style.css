@@ -212,6 +212,9 @@ html {
     flex-direction: column;
     opacity: 0;
     visibility: hidden;
+    z-index: 100;
+    cursor: pointer;
+    transition: opacity .2s;
 }
 
 .menu-icon-line {
@@ -236,21 +239,23 @@ html {
     display: flex;
     justify-content: flex-end;
     padding-right: 3rem;
+    z-index: 100;
+    transition: opacity .5s, visibility 0.5s, transform 0.5s;
 }
 
 .navbar-link {
     font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: 600;
     text-transform: uppercase;
     color: #000;
     margin: 0 2.5rem;
-    z-index: 100;
-    text-shadow: 0 0.1rem 0.3rem #000;
+    text-shadow: 0 0.1rem 0.1rem #000;
 }
 
 .hide-navbar {
     opacity: 0;
     visibility: hidden;
+    transform: translateX(10rem);
 }
 
 /* End of Navbar */
