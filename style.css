@@ -200,6 +200,52 @@ html {
 
 /* End of Page BG */
 
+/* Navigation */
+/* Menu Icon */
+.menu-icon {
+    position: fixed;
+    top: 0;
+    right: 6rem;
+    width: 12rem;
+    height: 7rem;
+    background-color: cadetblue;
+    flex-direction: column;
+}
+
+.menu-icon-line {
+    width: 4rem;
+    height: 0.01rem;
+    background-color: #000;
+    margin: 0.5rem 0;
+    box-shadow: 0 0.3rem 0.5rem #000;
+}
+
+/* End of Menu Icon */
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 2.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 3rem;
+}
+
+.navbar-link {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000;
+    margin: 0 2.5rem;
+    z-index: 100;
+    text-shadow: 0 0.1rem 0.3rem #000;
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* End of Navbar */
+/* End of Navigation */
+
 /* Section 1 */
 .section-1 {
     position: relative;
@@ -214,7 +260,7 @@ html {
     left: 5rem;
     font-size: 2rem;
     text-transform: uppercase;
-    color: #fff;
+    color: #000;
 }
 
 /*End of Logo*/
@@ -306,7 +352,7 @@ html {
 /*Featured Text*/
 .featured-text {
     font-size: 2rem;
-    color: #fff;
+    color: #000;
     text-transform: uppercase;
     width: 0;
     word-wrap: break-word;
