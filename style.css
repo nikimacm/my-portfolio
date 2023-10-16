@@ -115,7 +115,7 @@ html {
 .section-heading {
     font-size: 2rem;
     font-weight: 300;
-    color: #fff;
+    color: #000;
     text-transform: uppercase;
     position: absolute;
     top: 50%;
@@ -434,9 +434,9 @@ html {
     color: #aaa;
     letter-spacing: 0.5rem;
     line-height: 0.9;
-    text-shadow: 0 0 1rem #9b0e0e;
+    text-shadow: 0 0 1rem #0e949b;
     position: relative;
-    mix-blend-mode: color-dodge;
+    mix-blend-mode: darken;
 }
 
 @keyframes aboutMeTextAnim {
@@ -692,6 +692,7 @@ html {
 /* Section 5 */
 .section-5 {
     position: relative;
+    margin-top: 10rem;
     height: 100vh;
     flex-direction: column;
 }
