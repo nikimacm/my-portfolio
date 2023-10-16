@@ -210,6 +210,8 @@ html {
     height: 7rem;
     background-color: cadetblue;
     flex-direction: column;
+    opacity: 0;
+    visibility: hidden;
 }
 
 .menu-icon-line {
@@ -218,6 +220,11 @@ html {
     background-color: #000;
     margin: 0.5rem 0;
     box-shadow: 0 0.3rem 0.5rem #000;
+}
+
+.show-menu-icon {
+    opacity: 1;
+    visibility: visible;
 }
 
 /* End of Menu Icon */
@@ -239,6 +246,9 @@ html {
     margin: 0 2.5rem;
     z-index: 100;
     text-shadow: 0 0.1rem 0.3rem #000;
+}
+
+.hide-navbar {
     opacity: 0;
     visibility: hidden;
 }
