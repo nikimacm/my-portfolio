@@ -84,6 +84,13 @@ mainBtns.forEach((btn) => {
 
 // End of Main Button
 
+// Progress bar
+const progressBar = document.querySelector(".progress-bar");
+const halfCircles = document.querySelectorAll(".half-circle");
+const halfCircleTop = document.querySelector(".half-circle-top");
+const progressBarCircle = document.querySelector(".progress-bar-circle")
+// End of Progress Bar
+
 // Navigation
 const menuIcon = document.querySelector(".menu-icon");
 const navbar = document.querySelector(".navbar");

@@ -200,6 +200,58 @@ html {
 
 /* End of Page BG */
 
+/* Progress Bar */
+.progress-bar {
+    position: fixed;
+    bottom: 4rem;
+    right: 4rem;
+    width: 8rem;
+    height: 8rem;
+    background-color: #000;
+    border-radius: 50%;
+    z-index: 200;
+    overflow: hidden;
+    transform: translate(-50%, -50%);
+}
+
+.half-circle,
+.half-circle-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    transform-origin: right center;
+    pointer-events: none;
+}
+
+.half-circle:nth-child(1) {
+    background-color: #b60000;
+}
+
+.half-circle:nth-child(2) {
+    background-color: #b60000;
+}
+
+.half-circle-top {
+    background-color: #fff;
+}
+
+.progress-bar-circle {
+    width: 7.8rem;
+    height: 7.8rem;
+    background-color: #fff;
+    border-radius: 50%;
+    color: #000;
+    font-size: 4rem;
+    z-index: 200;
+    transition: transform 0.5s;
+    pointer-events: none;
+}
+
+/* End of Progress Bar */
+
+
 /* Navigation */
 /* Menu Icon */
 .menu-icon {
