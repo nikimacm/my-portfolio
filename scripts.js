@@ -123,7 +123,7 @@ const progressBarFn = (bigImgWrapper) => {
         }
     });
 
-    scrollBool = scrolledPortion + pageViewportHeight === pageHeight;
+    const scrollBool = scrolledPortion + pageViewportHeight === pageHeight;
 
     // Arrow Rotation
     if (scrollBool) {
@@ -229,6 +229,12 @@ projects.forEach((project, i) => {
         bigImg.setAttribute("src", `${imgPath}-big.jpg`);
         bigImgWrapper.appendChild(bigImg);
         document.body.style.overflow = "hidden";
+
+        progressBarFn(bigImgWrapper);
+
+        bigImgWrapper.onscroll = () => {
+            progressBarFn(bigImgWrapper);
+        }
 
         projectHideBtn.classList.add("change");
 
