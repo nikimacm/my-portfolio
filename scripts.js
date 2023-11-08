@@ -123,7 +123,7 @@ const progressBarFn = (bigImgWrapper) => {
         }
     });
 
-    const scrollBool = scrolledPortion + pageViewportHeight === pageHeight;
+    scrollBool = scrolledPortion + pageViewportHeight === pageHeight;
 
     // Arrow Rotation
     if (scrollBool) {
@@ -150,9 +150,8 @@ progressBar.addEventListener("click", (e) => {
         scrollBool ? window.scrollTo(0, 0) : window.scrollTo(0, position);
     } else {
         scrollBool
-            ?
-            imageWrapper.scrollTo(0, 0) :
-            imageWrapper.scrollTo(0, imageWrapper.scrollHeight);
+            ?imageWrapper.scrollTo(0, 0) 
+            :imageWrapper.scrollTo(0, imageWrapper.scrollHeight);
     }
 });
 // End of Progress Bar Click
@@ -228,8 +227,9 @@ projects.forEach((project, i) => {
         const imgPath = project.firstElementChild.getAttribute("src").split(".")[0];
         bigImg.setAttribute("src", `${imgPath}-big.jpg`);
         bigImgWrapper.appendChild(bigImg);
-        document.body.style.overflow = "hidden";
+        document.body.style.overflowY = "hidden";
 
+        document.removeEventListener("scroll", scrollFn);
         progressBarFn(bigImgWrapper);
 
         bigImgWrapper.onscroll = () => {
@@ -242,8 +242,13 @@ projects.forEach((project, i) => {
             projectHideBtn.classList.remove("change");
             bigImgWrapper.remove()
             document.body.style.overflowY = "scroll"
+
+            document.removeEventListener("scroll", scrollFn);
+
+            progressBarFn();
         };
     });
+
 
     // End of Big Project Image
 

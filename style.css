@@ -659,6 +659,7 @@ html {
     height: 0%;
     background-color: rgba(0, 0, 0, 0.9);
     overflow: hidden scroll;
+    scroll-behavior: smooth;
     z-index: 100;
     animation: imgWrapperAnim 1s forwards;
 }
