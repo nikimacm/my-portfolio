@@ -256,8 +256,8 @@ html {
 /* Menu Icon */
 .menu-icon {
     position: fixed;
-    top: 0;
-    right: 6rem;
+    top: 3.5rem;
+    right: 0;
     width: 12rem;
     height: 7rem;
     background-color: cadetblue;
@@ -266,6 +266,7 @@ html {
     visibility: hidden;
     z-index: 100;
     cursor: pointer;
+    transform: translate(-50%, -50% );
     transition: opacity .2s;
 }
 
@@ -281,7 +282,6 @@ html {
     opacity: 1;
     visibility: visible;
 }
-
 /* End of Menu Icon */
 /* Navbar */
 .navbar {
