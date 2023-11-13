@@ -461,4 +461,15 @@ setInterval(() => {
     }, 500);
 }, 3000);
 // End of slideshow
+
+// Form Validation
+const form = document.querySelector(".contact-form");
+const username = document.getElementById("name");
+const email = document.getElementById("email");
+const subject = document.getElementById("subject");
+const message = document.getElementById("message");
+const messages = document.querySelectorAll(".message");
+
+
+// End of Form Validation
 // End of Section 5

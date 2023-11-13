@@ -876,6 +876,11 @@ html {
     transition: opacity 0.3s;
 }
 
+.error.message {
+    visibility: visible;
+    opacity: 1;
+  }
+
 /* End of Form Validation */
 
 /* End of Form */
