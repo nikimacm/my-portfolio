@@ -83,6 +83,15 @@ const stickyElement = (x, y, hoveredEl) => {
   // End of Sticky Element
 };
 
+// Mouse circle transform
+
+const mouseCircleTransform = (hoveredEl) => {
+    if(hoveredEL.classList.contains("pointer-enter")){
+        console.log("pointer-enter");
+    }
+};
+// End of Mouse circle transform
+
 document.body.addEventListener("mousemove", (e) => {
     let x = e.clientX;
     let y = e.clientY;
