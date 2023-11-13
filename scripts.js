@@ -470,6 +470,16 @@ const subject = document.getElementById("subject");
 const message = document.getElementById("message");
 const messages = document.querySelectorAll(".message");
 
+const error = (input, message)=> {
+    
+}
 
+const checkRequiredFields = (inputArr) => {
+    inputArr.forEach(input => {
+        if(input.value.trim()=== "") {
+
+        }
+    })
+}
 // End of Form Validation
 // End of Section 5
