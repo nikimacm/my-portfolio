@@ -618,7 +618,8 @@ html {
     object-fit: cover;
     position: absolute;
     top: 2rem;
-    opacity: .5;
+    opacity: 0.5;
+    pointer-events: none;
     transition: top 4s 0.2s, opacity;
 }
 
